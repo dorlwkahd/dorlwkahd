@@ -35,3 +35,11 @@ font-size: 90%;
 clear: both;
 }
 
+@media screen and (max-width: 480px) {
+    #header{
+        padding: 5px;
+        margin: 20px auto;
+    }
+    section#main, nav {width: 100%;}
+}
+
