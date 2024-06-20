@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜라 종류</title>
+    <style>
+    html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-image: url("ice\ back.jpg"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #aaaaaa;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .back-button:hover {
+            background-color: #717171;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .cola-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .cola-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .cola-info {
+            flex-grow: 1;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #28a745;
+        }
+        .description {
+            margin-top: 5px;
+            color: #555;
+        }
+        .buy-button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <a href="#" class="back-button" onclick="history.back()">뒤로가기</a>
+    <div class="container">
+        <h1>콜라 종류</h1>
+        <div class="cola-item">
+            <img src="coca.jpg" alt="코카콜라">
+            <div class="cola-info">
+                <h2>코카콜라</h2>
+                <div class="price">₩1,000</div>
+                <div class="description">
+                    코카콜라는 세계적으로 유명한 탄산음료로, 시원하고 청량한 맛이 특징입니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+        <div class="cola-item">
+            <img src="pepsi.jfif" alt="펩시콜라">
+            <div class="cola-info">
+                <h2>펩시콜라</h2>
+                <div class="price">₩1,000</div>
+                <div class="description">
+                    펩시콜라는 달콤한 맛과 함께 청량감을 제공하는 대표적인 탄산음료입니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+        <div class="cola-item">
+            <img src="pepsi0.jfif" alt="제로콜라">
+            <div class="cola-info">
+                <h2>제로콜라</h2>
+                <div class="price">₩1,200</div>
+                <div class="description">
+                    제로콜라는 설탕이 들어가지 않은 무가당 음료로, 칼로리를 걱정하지 않고 마실 수 있습니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+        <div class="cola-item">
+            <img src="cherry.jfif" alt="체리콜라">
+            <div class="cola-info">
+                <h2>체리콜라</h2>
+                <div class="price">₩1,300</div>
+                <div class="description">
+                    체리콜라는 콜라에 체리 맛이 더해져 독특하고 상쾌한 맛을 제공합니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+        <div class="cola-item">
+            <img src="vanila.jfif" alt="바닐라콜라">
+            <div class="cola-info">
+                <h2>바닐라콜라</h2>
+                <div class="price">₩1,300</div>
+                <div class="description">
+                    바닐라콜라는 콜라에 바닐라 향이 가미되어 달콤하면서도 부드러운 맛이 특징입니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

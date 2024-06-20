@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이다 종류</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-image: url("ice\ back.jpg"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #aaaaaa;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .back-button:hover {
+            background-color: #717171;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .cider-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .cider-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .cider-info {
+            flex-grow: 1;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #28a745;
+        }
+        .description {
+            margin-top: 5px;
+            color: #555;
+        }
+        .buy-button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <a href="#" class="back-button" onclick="history.back()">뒤로가기</a>
+
+    <div class="container">
+        <h1>사이다 종류</h1>
+        <div class="cider-item">
+            <img src="chilsung.jfif" alt="칠성사이다">
+            <div class="cider-info">
+                <h2>칠성사이다</h2>
+                <div class="price">₩1,000</div>
+                <div class="description">
+                    칠성사이다는 상쾌하고 청량한 맛이 특징인 한국의 대표 사이다입니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+        <div class="cider-item">
+            <img src="sprite.jfif" alt="스프라이트">
+            <div class="cider-info">
+                <h2>스프라이트</h2>
+                <div class="price">₩1,000</div>
+                <div class="description">
+                    스프라이트는 시원하고 청량한 레몬라임 맛의 사이다입니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+        <div class="cider-item">
+            <img src="narang0.jfif" alt="제로사이다">
+            <div class="cider-info">
+                <h2>제로사이다</h2>
+                <div class="price">₩1,200</div>
+                <div class="description">
+                    제로사이다는 무가당으로 칼로리를 걱정하지 않고 마실 수 있는 사이다입니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

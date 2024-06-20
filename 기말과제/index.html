@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 음료수 자판기</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: skyblue;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-image: url("ice\ back.jpg"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .vending-machine {
+            background-color: #ff0000;
+            width: 90%;
+            max-width: 400px;
+            height: 80%;
+            max-height: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+            background-color: #790000;
+            border-radius: 5px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .header .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .header .buttons a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-size: 0.9em;
+            margin: 5px;
+        }
+        .header .buttons a:hover {
+            background-color: #0056b3;
+        }
+        .drinks-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;
+            overflow-y: auto;
+            flex-grow: 1;
+            background-color: #222;
+            border-radius: 5px;
+        }
+        .drink {
+            background-color: #fff;
+            border-radius: 5px;
+            width: calc(50% - 10px); 
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        .drink:hover {
+            background-color: #f0f0f0;
+        }
+        .drink img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        .drink-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .drink-info h2 {
+            margin: 5px 0 0 0;
+            font-size: 1em;
+        }
+        .price {
+            font-size: 1em;
+            color: #333;
+            margin-top: 5px;
+        }
+        .buy-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 5px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+
+        @media (max-width: 600px) {
+            .drink {
+                width: calc(100% - 10px); 
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .vending-machine {
+                width: 75%;
+                height: 75%;
+            }
+            .drink {
+                width: calc(33.33% - 10px); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="vending-machine">
+        <div class="header">
+            <div class="buttons">
+                <a href="login.html">Login</a>
+            </div>
+            
+            <h1>음료수 자판기</h1>
+        </div>
+        <div class="drinks-container">
+            <div class="drink">
+                <img src="coca.jpg" alt="콜라">
+                <div class="drink-info">
+                    <h2>콜라</h2>
+                    <div class="price">₩1,000</div>
+                    <a href="cola.html" class="buy-button">구매</a>
+                </div>
+            </div>
+            <div class="drink">
+                <img src="chilsung.jfif" alt="사이다">
+                <div class="drink-info">
+                    <h2>사이다</h2>
+                    <div class="price">₩1,000</div>
+                    <a href="cider.html" class="buy-button">구매</a>
+                </div>
+            </div>
+            <div class="drink">
+                <img src="orange.jpg" alt="오렌지 주스">
+                <div class="drink-info">
+                    <h2>오렌지 주스</h2>
+                    <div class="price">₩1,200</div>
+                    <a href="orange-juice.html" class="buy-button">구매</a>
+                </div>
+            </div>
+
+            <div class="drink">
+                <img src="lemon.jpg" alt="레몬에이드">
+                <div class="drink-info">
+                    <h2>레몬에이드</h2>
+                    <div class="price">₩1,500</div>
+                    <a href="lemonade.html" class="buy-button">구매</a>
+                </div>
+            </div>
+            <div class="drink">
+                <img src="coffee.jfif" alt="커피">
+                <div class="drink-info">
+                    <h2>커피</h2>
+                    <div class="price">₩2,000</div>
+                    <a href="coffee.html" class="buy-button">구매</a>
+                </div>
+            </div>
+            <div class="drink">
+                <img src="green.jfif" alt="녹차">
+                <div class="drink-info">
+                    <h2>녹차</h2>
+                    <div class="price">₩1,500</div>
+                    <a href="greentea.html" class="buy-button">구매</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

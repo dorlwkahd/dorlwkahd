@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피 종류</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-image: url("ice\ back.jpg"); 
+            background-size: cover;
+            background-position: center;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #aaaaaa;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .back-button:hover {
+            background-color: #717171;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .coffee-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .coffee-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .coffee-info {
+            flex-grow: 1;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #28a745;
+        }
+        .description {
+            margin-top: 5px;
+            color: #555;
+        }
+        .buy-button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <a href="#" class="back-button" onclick="history.back()">뒤로가기</a>
+    <div class="container">
+        <h1>커피 종류</h1>
+        <div class="coffee-item">
+            <img src="esopre.jfif" alt="에스프레소">
+            <div class="coffee-info">
+                <h2>에스프레소</h2>
+                <div class="price">₩3,000</div>
+                <div class="description">
+                    에스프레소는 진한 커피 맛을 즐길 수 있는 클래식한 커피입니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+        <div class="coffee-item">
+            <img src="cafuchino.jfif" alt="카푸치노">
+            <div class="coffee-info">
+                <h2>카푸치노</h2>
+                <div class="price">₩3,500</div>
+                <div class="description">
+                    카푸치노는 에스프레소와 스팀 밀크, 우유 거품이 어우러진 부드러운 커피입니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+        <div class="coffee-item">
+            <img src="latte.jfif" alt="라떼">
+            <div class="coffee-info">
+                <h2>라떼</h2>
+                <div class="price">₩4,000</div>
+                <div class="description">
+                    라떼는 에스프레소와 많은 양의 스팀 밀크가 조화를 이루는 부드러운 커피입니다.
+                </div>
+                <a href="#" class="buy-button">구매하기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
