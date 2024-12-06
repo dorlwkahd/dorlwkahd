@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/img1.png" id="cc" change width="200px">
+   
+
+    <div  onmouseover="change1(this)"
+    style="background-color: yellow; width: 200px; height: 200px;" id="here">
+    1번</div>
+    <div onmouseover="change2(this)"
+    style="background-color: rgb(118, 197, 148); width: 200px; height: 200px;" id="here">
+    2번</div>
+    <div onmouseover="change3(this)"
+    style="background-color: rgb(110, 135, 198); width: 200px; height: 200px;" id="here">
+    3번</div>
+    <div id="" onmouseover="change4(this)"
+    style="background-color: rgb(198, 144, 110); width: 200px; height: 200px;" id="here">
+    4번</div>
+   
+   <script>
+        function change1(cc){
+         cc.src="images/img1.png";
+     }
+     function change2(cc){
+            cc.src="images/img2.png";
+     }
+     function change3(cc){
+            cc.src="images/img3.png";
+     }
+     function change4(cc){
+            cc.src="images/img4.png";
+     }
+    </script>
+</body>
+</html>
